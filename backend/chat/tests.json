@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "name": "Test chat endpoint with message",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "message": "Hello"
+      },
+      "expectedStatus": 200
+    },
+    {
+      "name": "Test OPTIONS for CORS",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    }
+  ]
+}
